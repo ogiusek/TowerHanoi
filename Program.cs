@@ -12,10 +12,20 @@ public static partial class Program{
     static void Main()
     {
         AddPucks();
+        Write();
         while (true)
         {
-            Write();
-            GetValue();
+            if (sticks[1].Count == pucksCount || sticks[2].Count == pucksCount)
+            {
+                Console.Clear();
+                Console.WriteLine("Wygrałeś!");
+                break;
+            }
+            else 
+            { 
+                GetValue();
+                Write();
+            }
         }
     }
     static void Write()
