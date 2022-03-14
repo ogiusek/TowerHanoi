@@ -48,7 +48,7 @@ public static partial class Program{
         text = Console.ReadLine();
         if (text == "a" || text == "ai")
         {
-            //Ai()
+            Ai(pucksCount, 2);
         }
         else
         {
@@ -66,6 +66,52 @@ public static partial class Program{
                 //throw;
             }
         
+        }
+    }
+    static void Ai(int fromPuck, int toStick)
+    {
+        bool canGoToStick = false;
+        int fromStick = 0;
+        int lastStick = 0;
+        for (int i = 0; i < sticks.Length; i++)
+        {
+            if (sticks[i].Contains(fromPuck)) {
+                fromStick = i;
+                break;
+            }
+        }
+        for (int i = 0; i < sticks.Length; i++)
+        {
+            if (i != fromStick && i != toStick)
+            {
+                lastStick = i;
+            }
+        }
+        if (sticks[toStick].Count == 0)
+        {
+            canGoToStick = true;
+        }
+        else if (fromPuck < sticks[toStick][sticks[toStick].Count - 1])
+        {
+            canGoToStick = true;
+        }
+        if (fromStick == toStick)
+        {
+            if (fromPuck != 1)
+            {
+               Ai(fromPuck - 1, fromStick);
+            }
+        }
+        else if (sticks[fromStick][sticks[fromStick].Count - 1] == fromPuck && canGoToStick)
+        {
+            Replace(fromStick, toStick);
+        }
+        else
+        {
+            if (fromPuck != 1)
+            {
+                Ai(fromPuck - 1, lastStick);
+            }
         }
     }
     static void Replace(int from, int to)
