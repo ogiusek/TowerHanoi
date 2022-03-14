@@ -10,7 +10,7 @@ public static partial class Program{
     static void Main()
     {
         AddPucks();
-        //while (true)
+        while (true)
         {
             Write();
             GetValue();
@@ -42,18 +42,44 @@ public static partial class Program{
     }
     static void GetValue()
     {
-        string firstText;
-        firstText = Console.ReadLine();
-        Console.Write(firstText);
+        string text;
+        text = Console.ReadLine();
+        if (text == "a" || text == "ai")
+        {
+            //Ai()
+        }
+        else
+        {
+            try
+            {
+                int from = int.Parse(text);
+                int to = int.Parse(Console.ReadLine());
+                Replace(from, to);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Podaj prawidłowe wartości");
+                Thread.Sleep(3000);
+                Console.Clear();
+                //throw;
+            }
+        
+        }
     }
     static void Replace(int from, int to)
     {
         if (from >= 0 && from <= 2 && to >= 0 && to <= 2)
         {
-            if (sticks[from][sticks[from].Count - 1] < sticks[to][sticks[to].Count() - 1])
+            if (sticks[to].Count == 0)
             {
                 sticks[to].Add(sticks[from][sticks[from].Count - 1]);
-                sticks[from].Remove(sticks[from].Count - 1);
+                sticks[from].RemoveAt(sticks[from].Count - 1);
+            }
+            else if (sticks[from][sticks[from].Count - 1] < sticks[to][sticks[to].Count() - 1])
+            {
+                sticks[to].Add(sticks[from][sticks[from].Count - 1]);
+                sticks[from].RemoveAt(sticks[from].Count - 1);
+
             }
         }
     }
@@ -65,7 +91,6 @@ public static partial class Program{
         for (int i = pucksCount; i > 0; i--)
         {
             sticks[0].Add(i);
-
         }
     }
 }
