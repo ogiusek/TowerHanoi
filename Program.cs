@@ -45,7 +45,6 @@ public static partial class Program{
         string firstText;
         firstText = Console.ReadLine();
         Console.Write(firstText);
-        if () {}
     }
     static void Replace(int from, int to)
     {
