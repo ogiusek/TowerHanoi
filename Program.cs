@@ -1,4 +1,6 @@
 ﻿Program.Main();
+// website with hanoi Tower
+// http://hanoi.simplecreator.pl/
 public static partial class Program{
 
     static List<int>[] sticks = new List<int>[] {
