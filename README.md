@@ -8,7 +8,7 @@
 - ### Celem gry jest przełożenie wszystkich krążków na inny kołek
 - ### Krążki mogą być tylko na większych od siebie krążkach
 - ### Można przełożyć tylko jeden krążek na raz
-## Sposób użycia tego kodu
+## Sposób użycia
 ### Na stronie internetwej
 ####
 ### W konsoli
@@ -18,3 +18,4 @@
 ##### ![Przed przeniesieniem](https://user-images.githubusercontent.com/100357263/158376429-baaa7b64-fb52-4698-baab-3b5f17aa91e8.PNG) 
 ##### Jak widać najmniejszy krążek został przeniesiony na trzeci kołek
 ##### ![Po przeniesieniu](https://user-images.githubusercontent.com/100357263/158376425-ba6f5495-191e-44da-82d7-0784180dbaa2.PNG)
+##### Aby dostać podpowiedź należy napisać: a, ai lub zostawić puste
