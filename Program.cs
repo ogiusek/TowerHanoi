@@ -66,7 +66,7 @@ public static partial class Program{
             {
                 int from = int.Parse(text);
                 int to = int.Parse(Console.ReadLine());
-                Replace(from, to);
+                Replace(from - 1, to - 1);
             }
             catch (Exception)
             {
