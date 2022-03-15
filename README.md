@@ -1,4 +1,4 @@
-# ** Wieża Hanoi **
+# **Wieża Hanoi**
 ## Jak wygląda gra ?
 ### Gra jest złożona z trzech kołków na których są ułożone krążki.
 ### Krązki są ułożone od największych do najmniejszych.
