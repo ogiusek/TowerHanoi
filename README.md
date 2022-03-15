@@ -20,6 +20,7 @@
 #### Jak widać wszystko działa
 #### W celu dostania podpowiedzi klikamy "automatycznie"
 #### Krążek powinien się przenieść w miejsce ,które pozwoli najszybciej ułożyć całą wieże na trzecim kołku
+#### Jeśli ktoś jest zainteresowany kodem strony internetowej wystarczy kliknąć f12
 ### W konsoli
 #### Aby przełożyć z jednego kołka na drugi podajemy ich numery
 #### przykładowo:
@@ -27,4 +28,7 @@
 ##### ![Przed przeniesieniem](https://user-images.githubusercontent.com/100357263/158376429-baaa7b64-fb52-4698-baab-3b5f17aa91e8.PNG) 
 ##### Jak widać najmniejszy krążek został przeniesiony na trzeci kołek
 ##### ![Po przeniesieniu](https://user-images.githubusercontent.com/100357263/158376425-ba6f5495-191e-44da-82d7-0784180dbaa2.PNG)
-##### Aby dostać podpowiedź należy napisać: a, ai lub zostawić puste
+##### Aby dostać podpowiedź należy napisać: a, ai albo zostawić puste
+## Jak działa Ai
+### Ai sprawdza czy może coś przenieść na kołek jeśli może to przenosi
+### 
