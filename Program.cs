@@ -56,7 +56,7 @@ public static partial class Program{
     {
         string text;
         text = Console.ReadLine();
-        if (text == "a" || text == "ai")
+        if (text == "a" || text == "ai" || text == "")
         {
             Ai(pucksCount, 2);
         }
@@ -71,7 +71,7 @@ public static partial class Program{
             catch (Exception)
             {
                 Console.WriteLine("Podaj prawidłowe wartości");
-                Thread.Sleep(3000);
+                Console.ReadKey();
                 Console.Clear();
                 //throw;
             }
