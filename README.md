@@ -8,7 +8,7 @@
 - ### Celem gry jest przełożenie wszystkich krążków na inny kołek
 - ### Krążki mogą być tylko na większych od siebie krążkach
 - ### Można przełożyć tylko jeden krążek na raz
-## Sposób użycia
+## **Sposób użycia**
 ### Na stronie internetwej
 #### Po włączeniu strony widzimy stronę o takim wyglądnie
 #### ![Wygląd strony](https://user-images.githubusercontent.com/100357263/158378197-98005b82-f973-4316-9be1-cd2ad7733dc6.PNG)
@@ -29,6 +29,9 @@
 ##### Jak widać najmniejszy krążek został przeniesiony na trzeci kołek
 ##### ![Po przeniesieniu](https://user-images.githubusercontent.com/100357263/158376425-ba6f5495-191e-44da-82d7-0784180dbaa2.PNG)
 ##### Aby dostać podpowiedź należy napisać: a, ai albo zostawić puste
-## Jak działa Ai
-### Ai sprawdza czy może coś przenieść na kołek jeśli może to przenosi
-### 
+##### Kod jest pod plikiem Program.cs
+## **Jak działa Ai**
+### Metoda przyjmuje dwie informacje który krążek ma przenieść i na który kołek
+### Jeśli krążek jest na kołku na którym powinien być wywołuje samą siebie i każe przenieść mniejszy krążek na siebie
+### Jeśli nie sprawdza czy może coś przenieść krążek na kołek i jeśli może to przenosi
+### W przeciwnym wypadku wywołuje się z mniejszym kołkiem i innym kołkiem
