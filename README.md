@@ -8,3 +8,6 @@
 - ### Celem gry jest przełożenie wszystkich krążków na inny kołek
 - ### Krążki mogą być tylko na większych od siebie krążkach
 - ### Można przełożyć tylko jeden krążek na raz
+## Sposób użycia tego kodu
+### Aby przełożyć z jednego kołka na drugi podajemy ich numery
+### przykładowo
