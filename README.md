@@ -6,3 +6,4 @@
 ### A na mojej [stronie internetowej](http://hanoi.simplecreator.pl/) od dołu do góry.
 ## **Zasady**
 - ### Celem gry jest przełożenie wszystkich krążków na inny kołek
+- ### Krążki mogą być tylko na większych od siebie
